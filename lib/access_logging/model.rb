@@ -3,7 +3,7 @@ require 'active_support/concern'
 module AccessLogging::Model
   extend ActiveSupport::Concern
   
-  include Hms::Scopes::Date
+  include DateRangeScopes
   
   REDIS_ATTRIBUTES = [
     :created_at,

@@ -9,6 +9,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/nragaz/access_logging"
   
   s.add_dependency 'rails', '~> 3'
+  s.add_dependency 'date_range_scopes'
   
   s.add_development_dependency 'sqlite3'
 end
