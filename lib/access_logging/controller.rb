@@ -46,6 +46,6 @@ module AccessLogging::Controller
     AccessLog.log_request current_anyone, request, model: object, verb: verb
   rescue => e
     # in production, don't kill the request just because logging failed
-    raise e if Rails.env.development?
+    raise e if Rails.env.development? || Rails.env.test?
   end
 end
